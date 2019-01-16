@@ -1,6 +1,6 @@
 class HelloWorld {
-    static hello( /* Parameters go here */ ) {
-        // Your code here
+    static hello( name?: string ) {
+        return (name == undefined) ? 'Hello, World!' : `Hello, ${name}!`;
     }
 }
 
