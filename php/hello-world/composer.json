@@ -1,0 +1,12 @@
+{
+    "name": "diana/hello-world",
+    "require": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "authors": [
+        {
+            "name": "dianastanciu",
+            "email": "dianastanciu13@yahoo.co.uk"
+        }
+    ]
+}
