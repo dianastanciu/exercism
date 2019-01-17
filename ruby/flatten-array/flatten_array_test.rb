@@ -4,7 +4,7 @@ require_relative 'flatten_array'
 # Common test data version: 1.2.0 0290376
 class FlattenArrayTest < Minitest::Test
   def test_no_nesting
-    # skip
+    skip
     flat_array = FlattenArray.flatten([0, 1, 2])
     assert_equal [0, 1, 2], flat_array
   end
@@ -16,7 +16,7 @@ class FlattenArrayTest < Minitest::Test
   end
 
   def test_5_level_nesting
-    skip
+    # skip
     flat_array = FlattenArray.flatten([0, 2, [[2, 3], 8, 100, 4, [[[50]]]], -2])
     assert_equal [0, 2, 2, 3, 8, 100, 4, 50, -2], flat_array
   end
