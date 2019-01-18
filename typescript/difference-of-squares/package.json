@@ -9,6 +9,7 @@
     "url": "https://github.com/exercism/xtypescript"
   },
   "devDependencies": {
+    "ts-node": "^7.0.1",
     "tslint": "^5.12.1",
     "typescript": "^2.9.2"
   },

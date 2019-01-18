@@ -1,23 +1,30 @@
-let numList: number[],
-    sumOfList: number,
-    poweredSumOfList: number;
-
 export default class Squares {
-    public numPar: number;
+    constructor (public num: number) { }
 
-    constructor ( data: number ) { this.numPar = data; }
+    public squareOfSum (num: number = this.num) {
+        const naturalNums: number[] = []
+        for (let i: number = 0; i <= num; i++) {
+            naturalNums.push(i)
+        }
 
-    public static squareOfSum(num: number, pow: number) {
-        for(let i = 0; i < num; i++) { numList.push(i); }
+        const sum: number = naturalNums.reduce((a, b) => a + b)
 
-        sumOfList = numList.reduce((a: number, b: number) => a + b);
-
-        poweredSumOfList = Math.pow(sumOfList, pow);
-
-        return poweredSumOfList;
+        return sum ** 2
     }
 
-    public sumOfSquare() {
-        //
+    public sumOfSquares (num: number = this.num) {
+        const naturalNums: number[] = []
+
+        for (let i: number = 0; i <= num; i++) {
+            naturalNums.push(i ** 2)
+        }
+
+        const sum: number = naturalNums.reduce((a, b) => a + b)
+
+        return sum
+    }
+
+    public difference (num: number = this.num) {
+        return this.squareOfSum(num) - this.sumOfSquares(num)
     }
 }
