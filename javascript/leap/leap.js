@@ -1,6 +1,3 @@
 export const isLeap = (num) => {
-  if (num % 4 === 0) {
-    return (num % 100 === 0) ? (num % 400 === 0) : true;
-  }
-  return false;
+  return ((num % 100 !== 0 && num % 4 === 0) || num % 400 === 0) ;
 };
