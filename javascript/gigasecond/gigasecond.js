@@ -1,5 +1,5 @@
 // export default 
-export default function gigasecond(initialDate) {
+function gigasecond(initialDate) {
   this.initialDate = initialDate;
   this.gigasecond = Math.pow(10, 9);
 };
