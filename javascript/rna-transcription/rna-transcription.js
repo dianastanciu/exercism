@@ -5,7 +5,7 @@ export const toRna = (string) => {
     T: 'A',
     A: 'U',
   };
-  const testString = /[GCTA]+$/g.test(string);
+  const testString = /^[GCTA]+$/g.test(string);
   const testEmpty = /^[\s]*$/.test(string);
   let result;
   if (testEmpty) {
